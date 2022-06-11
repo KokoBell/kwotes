@@ -15,7 +15,9 @@ export default function QuoteBox({ quote, handleNewQuote }) {
 
                 <a href="https://twitter.com/intent/tweet"
                     target="_blank"
-                    className={style.tweetLink}>Tweet</a>
+                    className={style.tweetLink}
+                    rel="noreferrer"
+                    >Tweet</a>
             </div>
         </div>
     );
