@@ -1,3 +1,41 @@
-#quoteBox {
-  color: aliceblue;
+.quoteBox {
+  width: 450px;
+  padding: 40px;
+  border-radius: 10px;
+  background-color: aliceblue;
+}
+
+.text {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.author {
+  font-size: 1.5rem;
+  margin: 15px 0;
+  color: gray;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+}
+
+.quoteButton, .tweetLink{
+    background-color: #9139b5;
+    border-color: #9139b5;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.tweetLink {
+  color: black;
+  background-color:violet;
+  margin-left: 15px;
+  padding: 7px 10px;
+  text-decoration: none;
 }

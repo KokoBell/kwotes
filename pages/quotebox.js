@@ -1,22 +1,21 @@
-import styles from '../styles/QuoteBox.module.css'
+import style from '../styles/QuoteBox.module.css'
 
 export default function QuoteBox({ quote, handleNewQuote }) {
     return (
-        <div className={styles.quoteBox}>
-            <p className={styles.text}>{quote.text}</p>
+        <div className={style.quoteBox}>
+            <p className={style.text}>{quote.text}</p>
 
-            <h2 className={styles.author}>{quote.author}</h2>
+            <h2 className={style.author}>{quote.author}</h2>
 
-            <div className={styles.actions}>
+            <div className={style.actions}>
 
-                <button id="new-quote" className={styles.quoteButton} onClick={handleNewQuote}>
+                <button id="new-quote" className={style.quoteButton} onClick={handleNewQuote}>
                     New Quote
                 </button>
 
                 <a href="https://twitter.com/intent/tweet"
-                    id="tweet-quote"
                     target="_blank"
-                    className={styles.tweetLink}>Tweet</a>
+                    className={style.tweetLink}>Tweet</a>
             </div>
         </div>
     );
